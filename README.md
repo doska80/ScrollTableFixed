@@ -4,6 +4,8 @@
 ScrollTableFixed is a small jquery library functions combined with ScrollFix https://github.com/ShiraNai7/jquery-scrollfix library to provide a header table fixed  below the main menu.
 the library supports several tables on the same page
 
+[Demo](http://htmlpreview.github.io/?https://github.com/doska80/ScrollTableFixed/blob/master/ScrollTableFixed/index.html)
+
 
 # How Use
 
