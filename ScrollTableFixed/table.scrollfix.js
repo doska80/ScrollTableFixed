@@ -1,4 +1,11 @@
-
+/*! table.scrollfix.js 1.0.0
+ * https://github.com/doska80/ScrollTableFixed
+ * http://responsive-nav.com
+ *
+ * Copyright (c) 2015 @doska80
+ * Available under the MIT license
+ */
+ 
 var fsca;
 var doit;
 var time = 0;
