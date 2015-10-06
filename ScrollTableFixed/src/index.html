@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery ScrollFix/ScrollHeaderTable</title>
+<style type="text/css">
+    body {font-family: sans-serif;}
+    h1 {margin-top: 0; font-size: 2em;}
+    h2 {margin-top: 0; font-size: 1.5em;}
+    h3 {font-size: 1.0em; text-decoration: underline;}
+    a {color: #238923; text-decoration: underline;}
+    a:hover {color: #000;}
+    p {margin: 1em 0; padding: 0.5em; background-color: #eee;}
+    #wrapper {max-width: 800px; min-width: 600px; margin: 0 auto;}
+    #header {margin-bottom: 1em; padding: 5em; background-color: #dcdcdc; text-align: center;}
+    #bar {padding: 1em; background-color: #000; color: #fff;}
+    #content {}
+    .header{background-color: #67d01e!important;}
+</style>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div id="header">
+            <h1>ScrollFix/ScrollHeaderTable demo</h1>
+            <p>Try scrolling vertically, resizing the window and scrolling horizontally.</p>
+        </div>
+
+        <div id="bar">
+            Lorem ipsum dolor sit amet.
+        </div>
+
+        <div id="content">
+            <p>Lorem ipsum dolor sit amet consectetuer elit pretium enim feugiat fringilla. A massa consectetuer eget suscipit laoreet rhoncus consequat Aliquam risus mauris. A tortor justo eu sodales ante convallis Vivamus vestibulum ullamcorper at. Et Vestibulum ultrices iaculis orci amet consequat commodo morbi id Vestibulum. Mauris mauris ut velit aliquet augue turpis vitae nulla vel et. Lacinia Curabitur Vivamus Nulla nibh vel orci dui tellus sit metus. Ipsum tortor sit nisl dapibus ligula Morbi consequat pellentesque pede sit. Ut nec vitae orci turpis Quisque Donec vestibulum elit ut ut. Interdum magnis elit dolor pretium sed molestie risus enim neque volutpat. Urna lacinia In eu id Quisque Lorem molestie felis nisl Phasellus. Lacinia Curabitur adipiscing accumsan felis cursus eget Nunc augue eget pellentesque. Nam ante elit metus Curabitur elit nunc lorem nunc enim orci. Hendrerit feugiat sem libero elit et felis justo nibh tristique Curabitur. Neque nisl.</p>
+            <p>
+ 			 <table id="tb1" class="table table-striped fix-table" style="border: 1px solid #67d01e;">
+    			<thead>
+      			<tr class="header">
+        			<th>Firstname</th>
+        			<th>Lastname</th>
+        			<th>Email</th>
+      			</tr>
+    			</thead>
+    			<tbody>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+    		</tbody>
+  		</table>
+            </p>            
+            <p>Quam at Cum lacus ipsum wisi congue Phasellus augue faucibus et. Vitae non justo faucibus amet wisi Phasellus pulvinar nibh nunc lacinia. Tincidunt quam condimentum Nulla consectetuer ligula at feugiat justo elit a. Elit vitae massa Aliquam fames fermentum libero wisi accumsan quis tempor. Laoreet urna et platea purus ipsum lorem tristique pede Pellentesque convallis. Nibh eu In Vivamus nibh consectetuer tortor ac justo tempor felis. Nam enim pellentesque egestas vitae Pellentesque nunc Curabitur fames sed id. Lacinia elit Nam ridiculus arcu velit eleifend vitae cursus congue nisl. Interdum fermentum Phasellus Vestibulum quis nonummy ipsum amet pellentesque nunc Praesent. Urna euismod Aenean et volutpat Sed porta eu ultrices pretium tellus. Laoreet condimentum montes a in enim pede Phasellus gravida pretium sagittis. Leo Phasellus ut Maecenas Nam et nonummy et tristique ut quis. Ipsum Curabitur Phasellus Curabitur Donec fames ut Nam Aenean id orci. Ac tellus tristique sagittis laoreet elit faucibus Sed justo ante turpis. In adipiscing tincidunt Morbi libero turpis sed id malesuada nisl ut. Nec lorem lorem at urna dictum nulla ac ridiculus Curabitur morbi. Venenatis dui dolor enim Pellentesque ante urna Maecenas ut ligula Nulla. A tempus sit at pede.</p>
+            <p>
+			<div class="container">
+    			<table id="tb3" class="table table-striped fix-table" style="border: 1px solid #67d01e;float:left;width:33%;margin-right: 50px;">
+    			<thead>
+      			<tr class="header">
+        			<th>Firstname</th>
+        			<th>Lastname</th>
+        			<th>Email</th>
+      			</tr>
+    			</thead>
+    			<tbody>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+    			</tbody>    			
+    			</table>
+   			    <table id="tb4" class="table table-striped fix-table" style="border: 1px solid #67d01e;float:left;width:33%;">
+    			<thead>
+      			<tr class="header">
+        			<th>Firstname</th>
+        			<th>Lastname</th>
+        			<th>Email</th>
+      			</tr>
+    			</thead>
+    			<tbody>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+    			</tbody> 
+    			</table>
+			</div>                        
+            </p>    
+            <p>Lorem Nullam cursus consequat gravida fringilla lacus sollicitudin consectetuer ut vitae. Feugiat nisl a malesuada lobortis senectus justo tincidunt ac mi elit. Augue quis adipiscing interdum id laoreet Phasellus eget lacinia pretium Vestibulum. Odio Vestibulum Phasellus Quisque wisi massa morbi wisi fames orci congue. Phasellus hendrerit ridiculus Nunc at elit turpis at adipiscing a et. Tincidunt elit interdum malesuada adipiscing Maecenas urna consequat Sed elit vel. Tincidunt sit lacinia augue ut Morbi id interdum id Aliquam tortor. Augue habitant id vel ut id metus metus accumsan enim purus. Maecenas arcu nibh neque sit id dictum felis Curabitur Maecenas porta. Wisi vel et est convallis Nunc egestas Praesent a interdum augue. Lacinia vitae ut dictum scelerisque feugiat nunc a turpis Donec nascetur. Nunc id Nam gravida vel elit mauris nec congue Integer congue. Nullam id id libero Curabitur lacinia at suscipit montes natoque enim. Orci leo ipsum tempor eros sit metus nibh tristique Aenean ante. Magna Curabitur Phasellus Vivamus Pellentesque quis habitant laoreet nec vitae felis. Tincidunt lacus volutpat tincidunt hendrerit Cum dui Nam sagittis ipsum orci. Nulla urna enim et tellus congue orci Fusce wisi non nibh. Tortor semper justo laoreet Nam cursus Sed Sed tristique nibh.</p>
+            <p>
+ 			 <table id="tb2" class="table table-striped fix-table" style="border: 1px solid #67d01e;">
+    			<thead>
+      			<tr class="header">
+        			<th>Firstname</th>
+        			<th>Lastname</th>
+        			<th>Email</th>
+      			</tr>
+    			</thead>
+    			<tbody>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+    		</tbody>
+  		</table>
+            </p>   
+            <p>
+			<div class="container">
+    			<table id="tb3" class="table table-striped fix-table" style="border: 1px solid #67d01e;float:left;width:33%;margin-right: 50px;">
+    			<thead>
+      			<tr class="header">
+        			<th>Firstname</th>
+        			<th>Lastname</th>
+        			<th>Email</th>
+      			</tr>
+    			</thead>
+    			<tbody>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+    			</tbody>    			
+    			</table>
+   			    <table id="tb4" class="table table-striped fix-table" style="border: 1px solid #67d01e;float:left;width:33%;">
+    			<thead>
+      			<tr class="header">
+        			<th>Firstname</th>
+        			<th>Lastname</th>
+        			<th>Email</th>
+      			</tr>
+    			</thead>
+    			<tbody>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>Mary</td>
+        			<td>Moe</td>
+        			<td>mary@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>July</td>
+        			<td>Dooley</td>
+        			<td>july@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+      			<tr>
+        			<td>John</td>
+        			<td>Doe</td>
+        			<td>john@example.com</td>
+      			</tr>
+    			</tbody> 
+    			</table>
+			</div>                        
+            </p>
+            <p>Pede mi et eu lobortis augue ipsum Vivamus ipsum et semper. Nunc nibh ut laoreet nibh semper pede venenatis justo risus facilisi. Elit justo aliquet elit mauris magna mus libero nibh tincidunt mauris. Dui sit massa tellus venenatis condimentum faucibus facilisis et lacinia quis. Id dis mauris odio Vivamus Quisque at dolor dui laoreet lobortis. Lorem eros tempus id urna orci pharetra et Curabitur libero adipiscing. Leo eu dictumst urna velit at a eget id semper in. Adipiscing dictumst a Curabitur eu feugiat nunc Aliquam consequat amet sapien. Condimentum ac lorem in sodales amet Vivamus leo odio tortor ac. Neque egestas hac vitae Vestibulum Suspendisse diam semper vitae eget accumsan. Tempus malesuada libero In malesuada hac Cras porttitor mi tincidunt ac. Porttitor dignissim tortor cursus Vivamus Vestibulum Suspendisse euismod tincidunt Phasellus pellentesque. Dolor est lacus interdum semper justo et ac In tempus Mauris. Aliquam et Nam dui semper laoreet orci arcu et nec quis. Quis vitae mauris penatibus netus tincidunt id leo massa volutpat ac. Feugiat augue nunc Donec tincidunt vitae sagittis montes enim Pellentesque lacinia. Hendrerit Nam enim ligula congue orci quis velit Morbi nec tellus. Lacus vel felis parturient tellus nunc Nam Vestibulum In Vestibulum vestibulum. Vestibulum quis magna Praesent tempus suscipit laoreet quam Vestibulum lorem Sed. Porttitor quis Aliquam Phasellus fringilla consequat leo vitae metus id nibh. Cum nisl sem nec pede sem et Phasellus gravida urna orci. Ac nonummy wisi nec ridiculus et wisi metus suscipit.</p>             
+            <p>Mus aliquet nonummy cursus volutpat Vestibulum senectus habitant risus et justo. Ac Sed Aliquam quis consequat enim interdum velit Nulla ante ut. Sed non suscipit justo Curabitur wisi quis nisl Vivamus malesuada egestas. Lorem vel nibh elit pede sagittis risus sit ligula interdum sit. Tempus sapien neque nibh convallis pellentesque Suspendisse wisi cursus hendrerit Curabitur. Semper quis auctor et gravida et risus commodo orci consectetuer volutpat. Id lobortis nunc et Sed est elit volutpat augue Donec Nunc. Ante vitae Nulla Sed nibh In Aenean metus auctor Suspendisse a. Amet Pellentesque tincidunt et aliquet Nunc Nam Proin magna velit libero. Ut urna convallis congue et eros pharetra Curabitur pede Integer urna. Sed id Quisque Suspendisse a lacus nunc ut Ut condimentum wisi. Nulla urna odio consectetuer augue accumsan Vestibulum tortor vel natoque purus. Leo quis sollicitudin arcu in nibh Vestibulum ligula Aenean ac Vivamus. Eget scelerisque lobortis Quisque nulla malesuada et et risus nibh libero. Feugiat tellus Integer quam magna lorem pulvinar ante ante mattis Sed. Lorem Integer In vel pretium pulvinar id elit dictumst ultrices wisi. Sit ut amet pretium Curabitur mus malesuada accumsan tortor justo lacus. Enim urna id leo nibh dapibus netus volutpat facilisi dui ut. Praesent et nibh tellus volutpat laoreet quis Vivamus et sem Donec. Gravida Suspendisse lobortis a porttitor mauris tortor ut In cursus penatibus. Mauris Duis lacinia Integer felis volutpat Mauris mauris metus Pellentesque In. Pede pretium Phasellus vel Vestibulum iaculis hendrerit purus nisl magna mollis. Vestibulum et tristique odio at velit dolor eros Nulla est mauris. Sit et elit ut eget In tempus et turpis quis.</p>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="scrollfix.js"></script>
+    <script type="text/javascript" src="table.scrollfix.js"></script>
+
+    <script type="text/javascript">
+        $('#bar').scrollFix();
+        $('.fix-table').headerScrollFix({fixHeaderClass: 'scroll-fix'})
+    </script>
+
+</body>
+</html>
